@@ -29,3 +29,8 @@ if (module.hot) {
         new p5();
     });
 }
+
+// prevent scroll
+document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+}, { passive: false })
